@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fafafa;
+}
+
+header {
+    height: 10vh;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #fafafa;
+    box-shadow: 4px 5px 10px rgba(0, 0, .2);
+    top: 0;
+    line-height: 10vh;
+    z-index: 3;
+}
+
+main {
+    margin-top: 15vh;
+
+}
+
+.calender {
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.sep-calender {
+    box-shadow: 4px 5px 10px rgb(0, 0, 0, .2), -9px -13px 11px 2px #fafafa;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.sep-calender h1 {
+    text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    gap: 1rem;
+}
+
+.days {
+    margin-top: 1rem;
+}
+
+li {
+    text-align: center;
+}
+
+
+li:nth-child(7n+1) {
+    color: tomato;
+}
+
+li:nth-child(7n-1) {
+    color: lime;
+}
